@@ -1,15 +1,19 @@
 # ContextForge
 
-ContextForge is a provenance-aware hybrid retrieval engine that combines lexical search, semantic similarity, and entity relationships to retrieve evidence from heterogeneous document collections.
+ContextForge is a hybrid retrieval engine for searching heterogeneous document collections while preserving the source of every result.
 
-Unlike vector-only RAG systems, ContextForge evaluates multiple retrieval signals, preserves source-level provenance, resolves recurring entities across documents, and abstains when available evidence is insufficient.
+Instead of relying only on vector similarity, it combines lexical search, semantic retrieval, and entity relationships, then uses a confidence layer to abstain when the available evidence is weak.
 
-**Stack:** Python 3.11 · FastAPI · Pydantic · PostgreSQL 16 + pgvector (HNSW) · PostgreSQL full-text search with BM25 computed in SQL · all-MiniLM-L6-v2 (ONNX Runtime) · spaCy + rules for NER · React + TypeScript · pytest. No paid APIs; generation is optional and local (Ollama).
+### Highlights
+
+- Hybrid BM25 + vector + entity-aware retrieval
+- Source-level provenance and explainable component scores
+- Entity resolution and relationship-based query expansion
+- Confidence-aware abstention for weak evidence
+- FastAPI backend with a React + TypeScript interface
+- Reproducible evaluation across 100 labelled queries
 
 ![Search with entity expansion](docs/images/search_success.png)
-
----
-
 ## Contents
 
 1. [Why ContextForge exists](#why-contextforge-exists)
