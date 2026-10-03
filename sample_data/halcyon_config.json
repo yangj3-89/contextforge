@@ -1,0 +1,13 @@
+{
+  "title": "Halcyon production configuration",
+  "service": "halcyon-query-api",
+  "environment": "production",
+  "settings": [
+    {"key": "retrieval.hybrid_alpha", "value": 0.6, "description": "Weight of the vector score in the hybrid blend; the lexical score gets 1 - alpha"},
+    {"key": "retrieval.candidate_pool", "value": 50, "description": "Candidates fetched from each retriever before blending"},
+    {"key": "hnsw.ef_search", "value": 100, "description": "HNSW search breadth at query time"},
+    {"key": "ingest.max_file_mb", "value": 50, "description": "Uploads above this size are rejected with error QL-4013"},
+    {"key": "ratelimit.qps_per_tenant", "value": 20, "description": "Sustained queries per second allowed per tenant before HTTP 429"},
+    {"key": "cache.ttl_seconds", "value": 300, "description": "Time-to-live for cached query results"}
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "name": "contextforge-sample-er-gold-v1",
+  "description": "Hand-labelled gold clusters for entity resolution over sample_data/. Each mention is identified by (source file, surface form); the same surface can belong to different entities in different files (e.g. 'Alice', 'Sam').",
+  "entities": [
+    {
+      "gold_id": "alice_chen",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Alice Chen"
+        },
+        {
+          "source": "halcyon_adr_log.md",
+          "surface": "Alice Chen"
+        },
+        {
+          "source": "halcyon_incident_postmortem_2025_11.md",
+          "surface": "Alice Chen"
+        },
+        {
+          "source": "quillon_engineering_onboarding.md",
+          "surface": "Alice Chen"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Alice Chen"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Alice"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "A. Chen"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Dr. Chen"
+        },
+        {
+          "source": "quillon_offsite_2026_agenda.txt",
+          "surface": "Alice Chen"
+        },
+        {
+          "source": "quillon_team_directory.json",
+          "surface": "Alice Chen"
+        },
+        {
+          "source": "halcyon_jira_export.json",
+          "surface": "Alice Chen"
+        }
+      ]
+    },
+    {
+      "gold_id": "alice_moreno",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "ember_pilot_proposal.md",
+          "surface": "Alice Moreno"
+        },
+        {
+          "source": "customer_call_kestrel.txt",
+          "surface": "Alice Moreno"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Alice Moreno"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Alice"
+        },
+        {
+          "source": "slack_export_ember.json",
+          "surface": "Alice Moreno"
+        },
+        {
+          "source": "kestrel_ops_review_q1_2026.pdf",
+          "surface": "Alice Moreno"
+        }
+      ]
+    },
+    {
+      "gold_id": "samuel_okafor",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "ember_pilot_proposal.md",
+          "surface": "Samuel Okafor"
+        },
+        {
+          "source": "customer_call_kestrel.txt",
+          "surface": "Samuel Okafor"
+        },
+        {
+          "source": "customer_call_kestrel.txt",
+          "surface": "Sam"
+        },
+        {
+          "source": "slack_export_ember.json",
+          "surface": "Sam Okafor"
+        },
+        {
+          "source": "kestrel_ops_review_q1_2026.pdf",
+          "surface": "Samuel Okafor"
+        }
+      ]
+    },
+    {
+      "gold_id": "samantha_reyes",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "wren_readme.md",
+          "surface": "Samantha Reyes"
+        },
+        {
+          "source": "standup_log_wren.txt",
+          "surface": "Samantha Reyes"
+        },
+        {
+          "source": "standup_log_wren.txt",
+          "surface": "Sam"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Samantha Reyes"
+        }
+      ]
+    },
+    {
+      "gold_id": "marta_kowalski",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "wren_readme.md",
+          "surface": "Marta Kowalski"
+        },
+        {
+          "source": "standup_log_wren.txt",
+          "surface": "Marta Kowalski"
+        },
+        {
+          "source": "standup_log_wren.txt",
+          "surface": "Marta"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Marta Kowalski"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Marta"
+        },
+        {
+          "source": "atlas_retirement_notes.md",
+          "surface": "Marta Kowalski"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Marta Kowalski"
+        },
+        {
+          "source": "quillon_team_directory.json",
+          "surface": "Marta Kowalski"
+        }
+      ]
+    },
+    {
+      "gold_id": "ravi_narayan",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "lodestar_rfc.md",
+          "surface": "Ravi Narayan"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "Ravi Narayan"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "R. Narayan"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "Ravi"
+        },
+        {
+          "source": "corvid_contract_summary.pdf",
+          "surface": "Ravi Narayan"
+        },
+        {
+          "source": "brightwater_vendor_registry.json",
+          "surface": "Ravi Narayan"
+        }
+      ]
+    },
+    {
+      "gold_id": "jonas_lindqvist",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Jonas Lindqvist"
+        },
+        {
+          "source": "halcyon_adr_log.md",
+          "surface": "Jonas Lindqvist"
+        },
+        {
+          "source": "halcyon_incident_postmortem_2025_11.md",
+          "surface": "Jonas Lindqvist"
+        },
+        {
+          "source": "quillon_engineering_onboarding.md",
+          "surface": "Jonas Lindqvist"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Jonas Lindqvist"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Jonas"
+        },
+        {
+          "source": "quillon_offsite_2026_agenda.txt",
+          "surface": "Jonas Lindqvist"
+        },
+        {
+          "source": "quillon_team_directory.json",
+          "surface": "Jonas Lindqvist"
+        },
+        {
+          "source": "halcyon_jira_export.json",
+          "surface": "Jonas Lindqvist"
+        }
+      ]
+    },
+    {
+      "gold_id": "priya_desai",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Priya Desai"
+        },
+        {
+          "source": "halcyon_adr_log.md",
+          "surface": "Priya Desai"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Priya Desai"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Priya"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Priya Desai"
+        },
+        {
+          "source": "quillon_offsite_2026_agenda.txt",
+          "surface": "Priya Desai"
+        },
+        {
+          "source": "halcyon_jira_export.json",
+          "surface": "Priya Desai"
+        },
+        {
+          "source": "gpu_budget_memo_q3_2025.txt",
+          "surface": "Priya Desai"
+        },
+        {
+          "source": "quillon_team_directory.json",
+          "surface": "Priya Desai"
+        }
+      ]
+    },
+    {
+      "gold_id": "hannah_brooks",
+      "type": "PERSON",
+      "mentions": [
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Hannah Brooks"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Hannah"
+        },
+        {
+          "source": "quillon_offsite_2026_agenda.txt",
+          "surface": "Hannah Brooks"
+        },
+        {
+          "source": "gpu_budget_memo_q3_2025.txt",
+          "surface": "Hannah Brooks"
+        },
+        {
+          "source": "quillon_team_directory.json",
+          "surface": "Hannah Brooks"
+        }
+      ]
+    },
+    {
+      "gold_id": "quillon_labs",
+      "type": "ORGANIZATION",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "quillon_engineering_onboarding.md",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "atlas_retirement_notes.md",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "meeting_notes_halcyon_2026_01_15.txt",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "gpu_budget_memo_q3_2025.txt",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "quillon_team_directory.json",
+          "surface": "Quillon Labs"
+        },
+        {
+          "source": "quillon_quarterly_report_q3_2025.pdf",
+          "surface": "Quillon Labs"
+        }
+      ]
+    },
+    {
+      "gold_id": "brightwater_health",
+      "type": "ORGANIZATION",
+      "mentions": [
+        {
+          "source": "lodestar_rfc.md",
+          "surface": "Brightwater Health"
+        },
+        {
+          "source": "lodestar_security_review.md",
+          "surface": "Brightwater Health"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "Brightwater Health"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "Brightwater"
+        },
+        {
+          "source": "brightwater_compliance_audit_2026.pdf",
+          "surface": "Brightwater Health"
+        },
+        {
+          "source": "brightwater_compliance_audit_2026.pdf",
+          "surface": "Brightwater"
+        },
+        {
+          "source": "corvid_contract_summary.pdf",
+          "surface": "Brightwater Health"
+        },
+        {
+          "source": "brightwater_vendor_registry.json",
+          "surface": "Brightwater Health"
+        }
+      ]
+    },
+    {
+      "gold_id": "corvid_data",
+      "type": "ORGANIZATION",
+      "mentions": [
+        {
+          "source": "lodestar_rfc.md",
+          "surface": "Corvid Data"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "Corvid Data"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "Corvid"
+        },
+        {
+          "source": "corvid_contract_summary.pdf",
+          "surface": "Corvid Data"
+        },
+        {
+          "source": "corvid_contract_summary.pdf",
+          "surface": "Corvid"
+        },
+        {
+          "source": "brightwater_vendor_registry.json",
+          "surface": "Corvid Data"
+        },
+        {
+          "source": "lodestar_match_rules.json",
+          "surface": "Corvid"
+        }
+      ]
+    },
+    {
+      "gold_id": "tessellate_ai",
+      "type": "ORGANIZATION",
+      "mentions": [
+        {
+          "source": "wren_readme.md",
+          "surface": "Tessellate AI"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Tessellate AI"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Tessellate"
+        },
+        {
+          "source": "standup_log_wren.txt",
+          "surface": "Tessellate AI"
+        },
+        {
+          "source": "tessellate_wren_whitepaper.pdf",
+          "surface": "Tessellate AI"
+        }
+      ]
+    },
+    {
+      "gold_id": "kestrel_logistics",
+      "type": "ORGANIZATION",
+      "mentions": [
+        {
+          "source": "ember_pilot_proposal.md",
+          "surface": "Kestrel Logistics"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Kestrel Logistics"
+        },
+        {
+          "source": "kestrel_ops_review_q1_2026.pdf",
+          "surface": "Kestrel Logistics"
+        },
+        {
+          "source": "slack_export_ember.json",
+          "surface": "Kestrel Logistics"
+        }
+      ]
+    },
+    {
+      "gold_id": "project_halcyon",
+      "type": "PROJECT",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Project Halcyon"
+        },
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Halcyon"
+        },
+        {
+          "source": "halcyon_adr_log.md",
+          "surface": "Halcyon"
+        },
+        {
+          "source": "halcyon_incident_postmortem_2025_11.md",
+          "surface": "Project Halcyon"
+        },
+        {
+          "source": "atlas_retirement_notes.md",
+          "surface": "Project Halcyon"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Project Halcyon"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Halcyon"
+        },
+        {
+          "source": "quillon_offsite_2026_agenda.txt",
+          "surface": "Halcyon"
+        },
+        {
+          "source": "quillon_quarterly_report_q3_2025.pdf",
+          "surface": "Project Halcyon"
+        },
+        {
+          "source": "quillon_quarterly_report_q3_2025.pdf",
+          "surface": "Halcyon"
+        }
+      ]
+    },
+    {
+      "gold_id": "project_atlas",
+      "type": "PROJECT",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Project Atlas"
+        },
+        {
+          "source": "halcyon_adr_log.md",
+          "surface": "Project Atlas"
+        },
+        {
+          "source": "atlas_retirement_notes.md",
+          "surface": "Project Atlas"
+        },
+        {
+          "source": "atlas_retirement_notes.md",
+          "surface": "Atlas"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Project Atlas"
+        },
+        {
+          "source": "gpu_budget_memo_q3_2025.txt",
+          "surface": "Project Atlas"
+        },
+        {
+          "source": "quillon_quarterly_report_q3_2025.pdf",
+          "surface": "Project Atlas"
+        }
+      ]
+    },
+    {
+      "gold_id": "project_lodestar",
+      "type": "PROJECT",
+      "mentions": [
+        {
+          "source": "lodestar_rfc.md",
+          "surface": "Project Lodestar"
+        },
+        {
+          "source": "lodestar_security_review.md",
+          "surface": "Project Lodestar"
+        },
+        {
+          "source": "lodestar_security_review.md",
+          "surface": "Lodestar"
+        },
+        {
+          "source": "email_thread_lodestar_corvid.txt",
+          "surface": "Lodestar"
+        },
+        {
+          "source": "brightwater_compliance_audit_2026.pdf",
+          "surface": "Project Lodestar"
+        },
+        {
+          "source": "brightwater_compliance_audit_2026.pdf",
+          "surface": "Lodestar"
+        },
+        {
+          "source": "corvid_contract_summary.pdf",
+          "surface": "Project Lodestar"
+        },
+        {
+          "source": "brightwater_vendor_registry.json",
+          "surface": "Project Lodestar"
+        }
+      ]
+    },
+    {
+      "gold_id": "project_wren",
+      "type": "PROJECT",
+      "mentions": [
+        {
+          "source": "wren_readme.md",
+          "surface": "Project Wren"
+        },
+        {
+          "source": "wren_readme.md",
+          "surface": "Wren"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Project Wren"
+        },
+        {
+          "source": "hiring_announcement_marta.txt",
+          "surface": "Wren"
+        },
+        {
+          "source": "standup_log_wren.txt",
+          "surface": "Wren"
+        },
+        {
+          "source": "tessellate_wren_whitepaper.pdf",
+          "surface": "Project Wren"
+        },
+        {
+          "source": "tessellate_wren_whitepaper.pdf",
+          "surface": "Wren"
+        }
+      ]
+    },
+    {
+      "gold_id": "project_ember",
+      "type": "PROJECT",
+      "mentions": [
+        {
+          "source": "ember_pilot_proposal.md",
+          "surface": "Project Ember"
+        },
+        {
+          "source": "customer_call_kestrel.txt",
+          "surface": "Ember"
+        },
+        {
+          "source": "trip_report_retrieval_summit.txt",
+          "surface": "Ember"
+        },
+        {
+          "source": "kestrel_ops_review_q1_2026.pdf",
+          "surface": "Ember"
+        },
+        {
+          "source": "slack_export_ember.json",
+          "surface": "Ember"
+        }
+      ]
+    },
+    {
+      "gold_id": "postgresql",
+      "type": "TECHNOLOGY",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "PostgreSQL 16"
+        },
+        {
+          "source": "halcyon_adr_log.md",
+          "surface": "PostgreSQL"
+        },
+        {
+          "source": "atlas_retirement_notes.md",
+          "surface": "PostgreSQL"
+        },
+        {
+          "source": "halcyon_jira_export.json",
+          "surface": "PostgreSQL"
+        },
+        {
+          "source": "quillon_team_directory.json",
+          "surface": "PostgreSQL"
+        }
+      ]
+    },
+    {
+      "gold_id": "apache_kafka",
+      "type": "TECHNOLOGY",
+      "mentions": [
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Apache Kafka"
+        },
+        {
+          "source": "halcyon_design_doc.md",
+          "surface": "Kafka"
+        },
+        {
+          "source": "halcyon_incident_postmortem_2025_11.md",
+          "surface": "Kafka"
+        },
+        {
+          "source": "lodestar_rfc.md",
+          "surface": "Apache Kafka"
+        },
+        {
+          "source": "lodestar_security_review.md",
+          "surface": "Kafka"
+        },
+        {
+          "source": "halcyon_jira_export.json",
+          "surface": "Kafka"
+        }
+      ]
+    }
+  ]
+}

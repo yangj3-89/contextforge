@@ -1,0 +1,15 @@
+{
+  "title": "Halcyon issue tracker export",
+  "project_key": "HAL",
+  "exported_at": "2026-02-20",
+  "issues": [
+    {"key": "HAL-142", "summary": "Reranker returns duplicate passages from the same document", "status": "Done", "priority": "Medium", "assignee": "Priya Desai", "resolution": "Collapse passages from one document before the final top-k cut"},
+    {"key": "HAL-157", "summary": "Tenant filter missing on the autocomplete endpoint", "status": "Done", "priority": "Critical", "assignee": "Jonas Lindqvist", "resolution": "Added a tenant_id predicate and a regression test; no customer data was exposed"},
+    {"key": "HAL-163", "summary": "Kafka offset commit happens on a timer instead of per batch", "status": "Done", "priority": "High", "assignee": "Alice Chen", "resolution": "Offsets are now committed after each processed batch; follow-up from the November indexing postmortem"},
+    {"key": "HAL-171", "summary": "PDF tables are extracted as a single line of text", "status": "In Progress", "priority": "Medium", "assignee": "Priya Desai", "resolution": "Evaluating a layout-aware extractor"},
+    {"key": "HAL-178", "summary": "Upgrade pgvector from 0.5 to 0.7 to get halfvec support", "status": "To Do", "priority": "Low", "assignee": "Jonas Lindqvist", "resolution": "Blocked on the PostgreSQL minor version upgrade"},
+    {"key": "HAL-181", "summary": "Cost estimate for cross-encoder GPU inference", "status": "Done", "priority": "Medium", "assignee": "Priya Desai", "resolution": "Estimated 9,500 dollars per month at current query volume"},
+    {"key": "HAL-185", "summary": "Search returns HTTP 500 for queries longer than 2,000 characters", "status": "Done", "priority": "High", "assignee": "Alice Chen", "resolution": "Queries are truncated to 2,000 characters and a warning header is returned"},
+    {"key": "HAL-190", "summary": "Add OpenTelemetry tracing to the query API", "status": "In Progress", "priority": "Medium", "assignee": "Jonas Lindqvist", "resolution": "Spans exported to the shared Grafana Tempo instance"}
+  ]
+}

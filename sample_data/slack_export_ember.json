@@ -1,0 +1,11 @@
+{
+  "title": "ember-pilot channel export",
+  "workspace": "Kestrel Logistics",
+  "messages": [
+    {"user": "Sam Okafor", "ts": "2025-10-06 07:12", "text": "Ember produced routes for all 42 vans this morning. Two drivers overrode their routes because of a street market in Alfama."},
+    {"user": "Alice Moreno", "ts": "2025-10-09 16:40", "text": "Driver feedback sessions move to Thursdays at 16:00 so the night shift can join."},
+    {"user": "Rui Santos", "ts": "2025-10-21 10:05", "text": "Van 17 broke down at 10:00. Ember re-solved the remaining stops for the other vans in 40 seconds."},
+    {"user": "Sam Okafor", "ts": "2025-10-27 18:30", "text": "After three weeks, fuel cost per stop is down 4 percent. Early, but promising."},
+    {"user": "Alice Moreno", "ts": "2025-11-14 09:15", "text": "Drivers asked for a way to flag loading docks with long waits so the solver can avoid them at peak times."}
+  ]
+}

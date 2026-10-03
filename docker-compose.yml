@@ -1,0 +1,52 @@
+# ContextForge stack: PostgreSQL + pgvector, the API, and the web UI.
+#   docker compose up --build
+# API: http://localhost:8000/docs   UI: http://localhost:5173
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: contextforge
+      POSTGRES_PASSWORD: contextforge
+      POSTGRES_DB: contextforge
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U contextforge"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      CF_STORAGE_BACKEND: postgres
+      CF_DATABASE_URL: postgresql://contextforge:contextforge@db:5432/contextforge
+      CF_CORS_ORIGINS: '["http://localhost:5173"]'
+      # Uncomment to use an Ollama server running on the host for /answer:
+      # CF_GENERATION__BACKEND: ollama
+      # CF_GENERATION__OLLAMA_URL: http://host.docker.internal:11434
+    ports:
+      - "8000:8000"
+    volumes:
+      - models:/root/.cache/contextforge
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build:
+      context: frontend
+    environment:
+      VITE_API_URL: http://localhost:8000
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  models:

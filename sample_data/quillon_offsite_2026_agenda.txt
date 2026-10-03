@@ -1,0 +1,17 @@
+Quillon Offsite 2026 - Lisbon, 10-12 March 2026
+Venue: Armazem 16, Alcantara
+
+Day 1 (10 March)
+09:00 Keynote: "Search that knows when it does not know" - Hannah Brooks
+11:00 Halcyon roadmap for 2026 - Alice Chen
+14:00 Workshop: building an evaluation set from support tickets - Priya Desai
+16:30 Walking tour of the Alfama district
+
+Day 2 (11 March)
+09:30 Reliability review of the November indexing incident - Jonas Lindqvist
+11:00 Customer panel with three enterprise tenants
+15:00 Hack session: tenant-aware caching
+
+Day 3 (12 March)
+10:00 Team planning and retrospectives
+13:00 Departures

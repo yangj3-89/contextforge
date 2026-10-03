@@ -1,0 +1,10 @@
+Trip report - Applied Retrieval Summit 2026, Austin (18-19 February 2026)
+Author: Priya Desai
+
+Dr. Chen's talk on hybrid retrieval in Halcyon drew the largest audience of the afternoon. She showed that adding lexical candidates fixed most failures on queries containing part numbers and ticket identifiers.
+
+The most useful conversation was with Alice Moreno from Kestrel Logistics, who presented lessons from the Ember routing pilot. Alice argued that driver trust mattered more than solver quality: routes that drivers did not believe were simply ignored.
+
+A university group presented work on calibrating retrieval confidence. Their main point was that systems should abstain when the top passages disagree, instead of forcing an answer.
+
+Takeaways for Quillon Labs: add an abstention mode to Halcyon search, and log which retriever produced each result so failures can be debugged.

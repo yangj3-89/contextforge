@@ -1,0 +1,13 @@
+{
+  "title": "Lodestar match rules",
+  "version": "3.2",
+  "auto_merge_threshold": 0.92,
+  "review_threshold": 0.75,
+  "rules": [
+    {"field": "surname", "comparator": "Jaro-Winkler similarity", "agree_weight": 4.1, "disagree_weight": -3.2, "note": "Hyphenated surnames are split and the best-matching part is used"},
+    {"field": "given_name", "comparator": "nickname table plus Jaro-Winkler", "agree_weight": 3.0, "disagree_weight": -2.4, "note": "Maps nicknames such as Bill to William before comparison"},
+    {"field": "date_of_birth", "comparator": "exact match with transposition tolerance", "agree_weight": 5.6, "disagree_weight": -6.0, "note": "Day and month swapped counts as a partial agreement"},
+    {"field": "address", "comparator": "token set similarity after Corvid standardization", "agree_weight": 2.2, "disagree_weight": -0.8},
+    {"field": "phone", "comparator": "last seven digits", "agree_weight": 2.7, "disagree_weight": -0.5}
+  ]
+}

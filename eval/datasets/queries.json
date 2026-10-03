@@ -1,0 +1,1245 @@
+{
+  "name": "contextforge-sample-v1",
+  "version": "1",
+  "description": "Hand-labelled queries over the bundled synthetic corpus (sample_data/). Relevance is defined by evidence strings: a chunk is relevant if it belongs to a listed source and contains an evidence string. Categories are stratified to probe lexical matching, paraphrase (semantic) matching, entity aliases, relationship (multi-hop) questions and unanswerable questions. Every third query is in the dev split; only the dev split may be used for tuning.",
+  "queries": [
+    {
+      "id": "q001",
+      "query": "What does error QL-5031 mean?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_incident_postmortem_2025_11.md"
+      ],
+      "evidence": [
+        "returned error QL-5031"
+      ]
+    },
+    {
+      "id": "q002",
+      "query": "HAL-157",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_jira_export.json"
+      ],
+      "evidence": [
+        "key: HAL-157"
+      ]
+    },
+    {
+      "id": "q003",
+      "query": "What is retrieval.hybrid_alpha set to in production?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_config.json"
+      ],
+      "evidence": [
+        "key: retrieval.hybrid_alpha"
+      ]
+    },
+    {
+      "id": "q004",
+      "query": "Which error code is returned when an upload exceeds ingest.max_file_mb?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_config.json"
+      ],
+      "evidence": [
+        "rejected with error QL-4013"
+      ]
+    },
+    {
+      "id": "q005",
+      "query": "What is ADR-009 about?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_adr_log.md"
+      ],
+      "evidence": [
+        "ADR-009: HNSW index parameters"
+      ]
+    },
+    {
+      "id": "q006",
+      "query": "ef_construction value for the HNSW index",
+      "category": "lexical",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_adr_log.md"
+      ],
+      "evidence": [
+        "m = 16 and ef_construction = 64"
+      ]
+    },
+    {
+      "id": "q007",
+      "query": "WB-034 benchmark run",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "wren_benchmarks.json"
+      ],
+      "evidence": [
+        "run_id: WB-034"
+      ]
+    },
+    {
+      "id": "q008",
+      "query": "HAL-185 queries longer than 2,000 characters",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_jira_export.json"
+      ],
+      "evidence": [
+        "key: HAL-185"
+      ]
+    },
+    {
+      "id": "q009",
+      "query": "AES-256 key rotation interval for PHI",
+      "category": "lexical",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "lodestar_security_review.md"
+      ],
+      "evidence": [
+        "rotated every 90 days"
+      ]
+    },
+    {
+      "id": "q010",
+      "query": "date_of_birth comparator in the match rules",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_match_rules.json"
+      ],
+      "evidence": [
+        "field: date_of_birth"
+      ]
+    },
+    {
+      "id": "q011",
+      "query": "What does HAL-178 propose for pgvector?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_jira_export.json"
+      ],
+      "evidence": [
+        "Upgrade pgvector from 0.5 to 0.7"
+      ]
+    },
+    {
+      "id": "q012",
+      "query": "ratelimit.qps_per_tenant",
+      "category": "lexical",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_config.json"
+      ],
+      "evidence": [
+        "key: ratelimit.qps_per_tenant"
+      ]
+    },
+    {
+      "id": "q013",
+      "query": "What error rate did run WB-032 have?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "wren_benchmarks.json"
+      ],
+      "evidence": [
+        "run_id: WB-032"
+      ]
+    },
+    {
+      "id": "q014",
+      "query": "ADR-013 row-level security",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_adr_log.md"
+      ],
+      "evidence": [
+        "ADR-013: Tenant isolation through row-level security"
+      ]
+    },
+    {
+      "id": "q015",
+      "query": "HAL-163 offset commit",
+      "category": "lexical",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_jira_export.json"
+      ],
+      "evidence": [
+        "key: HAL-163"
+      ]
+    },
+    {
+      "id": "q016",
+      "query": "Who was the incident commander for the SEV-2 indexing backlog?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_incident_postmortem_2025_11.md"
+      ],
+      "evidence": [
+        "Incident commander: Jonas Lindqvist"
+      ]
+    },
+    {
+      "id": "q017",
+      "query": "cache.ttl_seconds",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_config.json"
+      ],
+      "evidence": [
+        "key: cache.ttl_seconds"
+      ]
+    },
+    {
+      "id": "q018",
+      "query": "How much did HAL-181 estimate cross-encoder inference would cost?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_jira_export.json"
+      ],
+      "evidence": [
+        "Estimated 9,500 dollars per month"
+      ]
+    },
+    {
+      "id": "q019",
+      "query": "Armazem 16 venue in Alcantara",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_offsite_2026_agenda.txt"
+      ],
+      "evidence": [
+        "Venue: Armazem 16, Alcantara"
+      ]
+    },
+    {
+      "id": "q020",
+      "query": "What happened at 11:05 during the indexing incident?",
+      "category": "lexical",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_incident_postmortem_2025_11.md"
+      ],
+      "evidence": [
+        "11:05 Root cause identified"
+      ]
+    },
+    {
+      "id": "q021",
+      "query": "How do we stop one customer from seeing another customer's documents?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_adr_log.md",
+        "meeting_notes_halcyon_2026_01_15.txt"
+      ],
+      "evidence": [
+        "PostgreSQL row-level security policies enforce isolation",
+        "row-level security is enabled for every tenant"
+      ]
+    },
+    {
+      "id": "q022",
+      "query": "Why did the company stop using its old keyword search product?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "atlas_retirement_notes.md"
+      ],
+      "evidence": [
+        "could not answer paraphrased questions"
+      ]
+    },
+    {
+      "id": "q023",
+      "query": "How long do new hires wait before they start carrying the pager?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_engineering_onboarding.md"
+      ],
+      "evidence": [
+        "join the on-call rotation after their sixth week"
+      ]
+    },
+    {
+      "id": "q024",
+      "query": "What is the response-time goal for interactive search?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_design_doc.md"
+      ],
+      "evidence": [
+        "p95 latency of 250 ms"
+      ]
+    },
+    {
+      "id": "q025",
+      "query": "How are likely duplicate patient records found without comparing every possible pair?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_rfc.md"
+      ],
+      "evidence": [
+        "blocking on date of birth plus the first three letters of the surname"
+      ]
+    },
+    {
+      "id": "q026",
+      "query": "What happens to record pairs the matcher is unsure about?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_rfc.md"
+      ],
+      "evidence": [
+        "go to a manual review queue"
+      ]
+    },
+    {
+      "id": "q027",
+      "query": "How much smaller did compression make the on-device model?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "wren_readme.md"
+      ],
+      "evidence": [
+        "cut the model size from 2.6 GB to 1.4 GB"
+      ]
+    },
+    {
+      "id": "q028",
+      "query": "Why was the dispatch pilot worried about the people behind the wheel?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "ember_pilot_proposal.md",
+        "trip_report_retrieval_summit.txt"
+      ],
+      "evidence": [
+        "Driver adoption is the main risk",
+        "driver trust mattered more than solver quality"
+      ]
+    },
+    {
+      "id": "q029",
+      "query": "How much time do dispatchers now spend planning routes each morning?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "kestrel_ops_review_q1_2026.pdf"
+      ],
+      "evidence": [
+        "Morning planning time for dispatchers fell from two hours to 25 minutes"
+      ]
+    },
+    {
+      "id": "q030",
+      "query": "Which approach did the team choose for storing vectors, and why?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "halcyon_adr_log.md",
+        "halcyon_design_doc.md"
+      ],
+      "evidence": [
+        "Halcyon keeps embeddings inside PostgreSQL using pgvector",
+        "a single database holds both the full-text index and the vector index"
+      ]
+    },
+    {
+      "id": "q031",
+      "query": "What went wrong with consumer offsets after the node upgrade?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_incident_postmortem_2025_11.md"
+      ],
+      "evidence": [
+        "A bug in the offset-commit logic"
+      ]
+    },
+    {
+      "id": "q032",
+      "query": "How much money did the search company bring in during its third quarter?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_quarterly_report_q3_2025.pdf"
+      ],
+      "evidence": [
+        "Revenue for the quarter was 4.2 million dollars"
+      ]
+    },
+    {
+      "id": "q033",
+      "query": "Who led the company's most recent funding round?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "quillon_quarterly_report_q3_2025.pdf"
+      ],
+      "evidence": [
+        "Series B led by Meridian Capital"
+      ]
+    },
+    {
+      "id": "q034",
+      "query": "How do engineers get emergency access to sensitive production records?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_security_review.md"
+      ],
+      "evidence": [
+        "break-glass procedure"
+      ]
+    },
+    {
+      "id": "q035",
+      "query": "Was the bug where the ranked list repeated the same passages fixed?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_jira_export.json"
+      ],
+      "evidence": [
+        "Reranker returns duplicate passages from the same document"
+      ]
+    },
+    {
+      "id": "q036",
+      "query": "What did field workers ask for next from the tablet assistant?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "standup_log_wren.txt",
+        "tessellate_wren_whitepaper.pdf"
+      ],
+      "evidence": [
+        "technicians want offline photo search next",
+        "Photo-based search is the most requested feature"
+      ]
+    },
+    {
+      "id": "q037",
+      "query": "How quickly can routes be recomputed when a vehicle breaks down?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "slack_export_ember.json"
+      ],
+      "evidence": [
+        "re-solved the remaining stops for the other vans in 40 seconds"
+      ]
+    },
+    {
+      "id": "q038",
+      "query": "How are releases rolled out gradually to production?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_engineering_onboarding.md"
+      ],
+      "evidence": [
+        "canary that receives 5 percent of traffic for 30 minutes"
+      ]
+    },
+    {
+      "id": "q039",
+      "query": "What did finance recommend to lower the cost of embedding compute?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "gpu_budget_memo_q3_2025.txt"
+      ],
+      "evidence": [
+        "We recommend reserved instances"
+      ]
+    },
+    {
+      "id": "q040",
+      "query": "What data quality problem at the hospital network motivated the record matching project?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_rfc.md"
+      ],
+      "evidence": [
+        "8.1 percent of patient records were duplicates"
+      ]
+    },
+    {
+      "id": "q041",
+      "query": "Why did the old search cluster return outdated results?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "atlas_retirement_notes.md",
+        "halcyon_adr_log.md"
+      ],
+      "evidence": [
+        "caused stale results after bulk imports",
+        "drifted out of sync with the primary database during bulk imports"
+      ]
+    },
+    {
+      "id": "q042",
+      "query": "How long were snapshot files kept compared with the policy?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "lodestar_security_review.md"
+      ],
+      "evidence": [
+        "retained for 400 days, longer than the 180-day retention policy"
+      ]
+    },
+    {
+      "id": "q043",
+      "query": "How did the offline assistant change the time technicians need to find repair steps?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "tessellate_wren_whitepaper.pdf"
+      ],
+      "evidence": [
+        "dropped from 9 minutes to 3.5 minutes"
+      ]
+    },
+    {
+      "id": "q044",
+      "query": "Which human languages can the tablet model handle?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "wren_readme.md"
+      ],
+      "evidence": [
+        "does not support languages other than English and German"
+      ]
+    },
+    {
+      "id": "q045",
+      "query": "Why could some apartment addresses not be standardized?",
+      "category": "semantic",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "email_thread_lodestar_corvid.txt"
+      ],
+      "evidence": [
+        "mostly rural routes and newly built apartment buildings"
+      ]
+    },
+    {
+      "id": "q046",
+      "query": "What is A. Chen responsible for in the tenant isolation work?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "meeting_notes_halcyon_2026_01_15.txt"
+      ],
+      "evidence": [
+        "A. Chen will own a quarterly penetration test"
+      ]
+    },
+    {
+      "id": "q047",
+      "query": "What did Dr. Chen talk about in Austin?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "trip_report_retrieval_summit.txt"
+      ],
+      "evidence": [
+        "Dr. Chen's talk on hybrid retrieval in Halcyon"
+      ]
+    },
+    {
+      "id": "q048",
+      "query": "What does R. Narayan want from the address vendor?",
+      "category": "entity",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "email_thread_lodestar_corvid.txt"
+      ],
+      "evidence": [
+        "Can Corvid commit to a monthly reference data refresh"
+      ]
+    },
+    {
+      "id": "q049",
+      "query": "What did Sam Okafor post about fuel costs?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "slack_export_ember.json"
+      ],
+      "evidence": [
+        "fuel cost per stop is down 4 percent"
+      ]
+    },
+    {
+      "id": "q050",
+      "query": "Which projects has Marta Kowalski worked on?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "hiring_announcement_marta.txt",
+        "atlas_retirement_notes.md",
+        "wren_readme.md"
+      ],
+      "evidence": [
+        "she built the ingestion pipeline for Project Halcyon",
+        "Marta Kowalski wrote the migration tooling",
+        "Marta Kowalski joined the team in January 2026"
+      ]
+    },
+    {
+      "id": "q051",
+      "query": "What is Corvid's uptime commitment?",
+      "category": "entity",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "corvid_contract_summary.pdf"
+      ],
+      "evidence": [
+        "99.5 percent monthly API availability"
+      ]
+    },
+    {
+      "id": "q052",
+      "query": "What does Brightwater pay Corvid each year?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "corvid_contract_summary.pdf",
+        "brightwater_vendor_registry.json"
+      ],
+      "evidence": [
+        "180,000 dollars per year",
+        "annual_value_usd: 180000"
+      ]
+    },
+    {
+      "id": "q053",
+      "query": "Where is Tessellate based for the Wren work?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "wren_readme.md",
+        "hiring_announcement_marta.txt"
+      ],
+      "evidence": [
+        "leads Project Wren from the Berlin office",
+        "work from our Berlin office"
+      ]
+    },
+    {
+      "id": "q054",
+      "query": "What did Samantha Reyes decide about context length?",
+      "category": "entity",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "standup_log_wren.txt"
+      ],
+      "evidence": [
+        "decided to keep the context length at 2,048 tokens"
+      ]
+    },
+    {
+      "id": "q055",
+      "query": "Which tracker issues is Jonas assigned to?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_jira_export.json"
+      ],
+      "evidence": [
+        "key: HAL-157",
+        "key: HAL-178",
+        "key: HAL-190"
+      ]
+    },
+    {
+      "id": "q056",
+      "query": "What role does Hannah have at Quillon?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_team_directory.json"
+      ],
+      "evidence": [
+        "role: Chief Executive Officer"
+      ]
+    },
+    {
+      "id": "q057",
+      "query": "What did Rui report about drivers and the old town?",
+      "category": "entity",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "customer_call_kestrel.txt"
+      ],
+      "evidence": [
+        "drivers still distrust routes through the old town"
+      ]
+    },
+    {
+      "id": "q058",
+      "query": "Which session did Priya run at the offsite?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_offsite_2026_agenda.txt"
+      ],
+      "evidence": [
+        "Workshop: building an evaluation set from support tickets - Priya Desai"
+      ]
+    },
+    {
+      "id": "q059",
+      "query": "What did the Kestrel operations review decide about Alice Moreno?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "kestrel_ops_review_q1_2026.pdf"
+      ],
+      "evidence": [
+        "Alice Moreno moves to the redesign of the drivers' mobile app"
+      ]
+    },
+    {
+      "id": "q060",
+      "query": "What is Imani Okoye's involvement with Lodestar?",
+      "category": "entity",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "lodestar_rfc.md"
+      ],
+      "evidence": [
+        "Reviewers: Wei Zhang, Dr. Imani Okoye"
+      ]
+    },
+    {
+      "id": "q061",
+      "query": "Who is Diego Alvarez?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "email_thread_lodestar_corvid.txt",
+        "corvid_contract_summary.pdf"
+      ],
+      "evidence": [
+        "Account Manager, Corvid Data",
+        "Contacts: Diego Alvarez for Corvid Data"
+      ]
+    },
+    {
+      "id": "q062",
+      "query": "How much did the Quillon finance team say was spent on GPUs?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "gpu_budget_memo_q3_2025.txt"
+      ],
+      "evidence": [
+        "GPU spend for Q3 2025 was 212,000 dollars"
+      ]
+    },
+    {
+      "id": "q063",
+      "query": "How fast is Wren on an iPad?",
+      "category": "entity",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "wren_benchmarks.json"
+      ],
+      "evidence": [
+        "run_id: WB-033"
+      ]
+    },
+    {
+      "id": "q064",
+      "query": "What language did Ravi's team write the matcher in?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_rfc.md"
+      ],
+      "evidence": [
+        "The matching service is written in Rust"
+      ]
+    },
+    {
+      "id": "q065",
+      "query": "What happened to Quillon Labs Inc.'s old Elasticsearch cluster?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "atlas_retirement_notes.md"
+      ],
+      "evidence": [
+        "The Elasticsearch cluster was shut down on 30 September 2025"
+      ]
+    },
+    {
+      "id": "q066",
+      "query": "What is QuillonLabs' net revenue retention?",
+      "category": "entity",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "quillon_quarterly_report_q3_2025.pdf"
+      ],
+      "evidence": [
+        "Net revenue retention reached 118 percent"
+      ]
+    },
+    {
+      "id": "q067",
+      "query": "When did S. Okafor's pilot start at the Lisbon depot?",
+      "category": "entity",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "ember_pilot_proposal.md"
+      ],
+      "evidence": [
+        "for twelve weeks starting in October 2025"
+      ]
+    },
+    {
+      "id": "q068",
+      "query": "Which database does the project led by Alice Chen use?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_design_doc.md",
+        "halcyon_adr_log.md"
+      ],
+      "evidence": [
+        "stores passages, metadata and embeddings in PostgreSQL 16 with the pgvector extension",
+        "Halcyon keeps embeddings inside PostgreSQL using pgvector"
+      ]
+    },
+    {
+      "id": "q069",
+      "query": "What solver library does Samuel Okafor's project use?",
+      "category": "relational",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "ember_pilot_proposal.md"
+      ],
+      "evidence": [
+        "computes daily routes with Google OR-Tools"
+      ]
+    },
+    {
+      "id": "q070",
+      "query": "What programming language is used by the project that Ravi Narayan leads?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_rfc.md"
+      ],
+      "evidence": [
+        "The matching service is written in Rust"
+      ]
+    },
+    {
+      "id": "q071",
+      "query": "Which runtime does Samantha Reyes's project use on Android tablets?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "wren_readme.md"
+      ],
+      "evidence": [
+        "executed with ONNX Runtime on Android tablets"
+      ]
+    },
+    {
+      "id": "q072",
+      "query": "Where does Marta Kowalski work now, and on what?",
+      "category": "relational",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "hiring_announcement_marta.txt"
+      ],
+      "evidence": [
+        "joins Tessellate AI as a staff engineer on Project Wren"
+      ]
+    },
+    {
+      "id": "q073",
+      "query": "Which vendor provides address data for the project led by Ravi Narayan?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_rfc.md",
+        "corvid_contract_summary.pdf"
+      ],
+      "evidence": [
+        "Address standardization is provided by the vendor Corvid Data",
+        "address standardization and reference data for Project Lodestar"
+      ]
+    },
+    {
+      "id": "q074",
+      "query": "What caching technology does Alice Moreno's project use?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "ember_pilot_proposal.md"
+      ],
+      "evidence": [
+        "caches traffic estimates in Redis"
+      ]
+    },
+    {
+      "id": "q075",
+      "query": "What on-time delivery result did the pilot sponsored by Samuel Okafor achieve?",
+      "category": "relational",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "kestrel_ops_review_q1_2026.pdf"
+      ],
+      "evidence": [
+        "on-time delivery rate rose from 87 percent to 93 percent"
+      ]
+    },
+    {
+      "id": "q076",
+      "query": "What is the latency target of the project Priya Desai works on?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "halcyon_design_doc.md"
+      ],
+      "evidence": [
+        "p95 latency of 250 ms"
+      ]
+    },
+    {
+      "id": "q077",
+      "query": "Which message broker carries registration events in Ravi Narayan's project?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_rfc.md"
+      ],
+      "evidence": [
+        "Registration events stream from the EHR through Apache Kafka"
+      ]
+    },
+    {
+      "id": "q078",
+      "query": "What weight precision does the project Marta Kowalski joined in 2026 ship with?",
+      "category": "relational",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "tessellate_wren_whitepaper.pdf",
+        "wren_readme.md"
+      ],
+      "evidence": [
+        "so Wren ships with int8 weights",
+        "Weights are quantized to int8 with per-channel scales"
+      ]
+    },
+    {
+      "id": "q079",
+      "query": "How large was the Series B raised by the company Hannah Brooks runs?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_quarterly_report_q3_2025.pdf"
+      ],
+      "evidence": [
+        "closed a 30 million dollar Series B"
+      ]
+    },
+    {
+      "id": "q080",
+      "query": "Which encryption standard protects data in the project that relies on Corvid Data?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "lodestar_security_review.md"
+      ],
+      "evidence": [
+        "encrypted at rest with AES-256"
+      ]
+    },
+    {
+      "id": "q081",
+      "query": "How much did the duplicate rate fall in the hospital project led by Ravi?",
+      "category": "relational",
+      "answerable": true,
+      "split": "dev",
+      "relevant_sources": [
+        "brightwater_compliance_audit_2026.pdf"
+      ],
+      "evidence": [
+        "fell from 8.1 percent to 2.3 percent"
+      ]
+    },
+    {
+      "id": "q082",
+      "query": "Who runs the on-call onboarding at the company that built Project Halcyon?",
+      "category": "relational",
+      "answerable": true,
+      "split": "test",
+      "relevant_sources": [
+        "quillon_engineering_onboarding.md"
+      ],
+      "evidence": [
+        "Jonas Lindqvist runs the on-call onboarding session"
+      ]
+    },
+    {
+      "id": "q083",
+      "query": "What is Project Halcyon's monthly AWS bill?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "in-domain; cloud bill never mentioned"
+    },
+    {
+      "id": "q084",
+      "query": "Who is the CEO of Tessellate AI?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "dev",
+      "notes": "in-domain; not stated"
+    },
+    {
+      "id": "q085",
+      "query": "What is the p95 latency of Project Lodestar's matching service?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "in-domain; only Halcyon/Wren latencies exist"
+    },
+    {
+      "id": "q086",
+      "query": "How many vans does Kestrel Logistics operate in Porto?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "in-domain; only Lisbon van count exists"
+    },
+    {
+      "id": "q087",
+      "query": "What was Quillon Labs' revenue in Q4 2025?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "dev",
+      "notes": "in-domain; only Q3 revenue exists"
+    },
+    {
+      "id": "q088",
+      "query": "Which cloud provider hosts Project Wren's model registry?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "in-domain; not stated"
+    },
+    {
+      "id": "q089",
+      "query": "What salary does a staff engineer earn at Quillon Labs?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "in-domain; only on-call stipend exists"
+    },
+    {
+      "id": "q090",
+      "query": "When will Project Ember launch in Madrid?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "dev",
+      "notes": "in-domain; only Porto and Rotterdam rollouts exist"
+    },
+    {
+      "id": "q091",
+      "query": "What did Bob Smith present at the Quillon Offsite?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "unknown person"
+    },
+    {
+      "id": "q092",
+      "query": "What is Project Nimbus and who leads it?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "unknown project"
+    },
+    {
+      "id": "q093",
+      "query": "Which database does Orion Bank use for fraud detection?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "dev",
+      "notes": "unknown organization"
+    },
+    {
+      "id": "q094",
+      "query": "What did Dr. Laura Kim say about the Lodestar audit?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "unknown person"
+    },
+    {
+      "id": "q095",
+      "query": "How much does Zephyr Analytics charge Brightwater Health?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "unknown vendor"
+    },
+    {
+      "id": "q096",
+      "query": "What is the boiling point of water at sea level?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "dev",
+      "notes": "out of domain"
+    },
+    {
+      "id": "q097",
+      "query": "Who won the 2018 FIFA World Cup?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "out of domain"
+    },
+    {
+      "id": "q098",
+      "query": "How do I make sourdough bread at home?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "out of domain"
+    },
+    {
+      "id": "q099",
+      "query": "What is the capital of Australia?",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "dev",
+      "notes": "out of domain"
+    },
+    {
+      "id": "q100",
+      "query": "Explain the rules of cricket.",
+      "category": "unanswerable",
+      "answerable": false,
+      "split": "test",
+      "notes": "out of domain"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Tessellate AI internal announcement - 26 January 2026
+
+Please welcome Marta Kowalski, who joins Tessellate AI as a staff engineer on Project Wren.
+
+Marta spent four years at Quillon Labs in Toronto, where she built the ingestion pipeline for Project Halcyon and led the migration off Project Atlas. At Tessellate she will own model export and quantization for Wren and will work from our Berlin office.
+
+Samantha Reyes

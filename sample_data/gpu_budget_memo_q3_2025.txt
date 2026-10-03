@@ -1,0 +1,10 @@
+To: Hannah Brooks
+From: Finance team, Quillon Labs
+Date: 2025-10-09
+Re: GPU budget for Q3 2025
+
+GPU spend for Q3 2025 was 212,000 dollars, 14 percent over plan. The overrun came from embedding backfills for tenants migrating from Project Atlas, which consumed 61 percent of all GPU hours in the quarter.
+
+Steady-state embedding of new uploads needs far less capacity. We recommend reserved instances for that workload starting in Q1 2026, which we estimate would save about 35 percent compared with on-demand pricing.
+
+No additional GPU budget is requested for the cross-encoder reranker until Priya Desai's cost estimate is reviewed.

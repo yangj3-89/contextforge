@@ -1,0 +1,26 @@
+From: Ravi Narayan (Brightwater Health)
+To: Diego Alvarez (Corvid Data)
+Date: 2026-01-28
+Subject: Address standardization accuracy
+
+Diego,
+
+During the January pilot, Corvid's address standardization returned no match for 6.4 percent of Brightwater addresses, mostly rural routes and newly built apartment buildings. For Lodestar that means more candidate pairs land in the manual review queue. Can Corvid commit to a monthly reference data refresh instead of the current quarterly one?
+
+Thanks,
+R. Narayan
+
+-----
+
+From: Diego Alvarez (Corvid Data)
+To: Ravi Narayan (Brightwater Health)
+Date: 2026-01-30
+Subject: RE: Address standardization accuracy
+
+Ravi,
+
+We can move Brightwater to monthly refreshes starting in March 2026 at no extra cost. We are also adding a new-construction feed built from county assessor records, which should cover most of the unmatched apartment addresses.
+
+Best,
+Diego Alvarez
+Account Manager, Corvid Data

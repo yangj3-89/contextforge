@@ -1,0 +1,10 @@
+{
+  "title": "Brightwater Health vendor registry",
+  "owner": "Brightwater Health procurement",
+  "vendors": [
+    {"vendor": "Corvid Data", "service": "Address standardization and reference data for Project Lodestar", "internal_owner": "Ravi Narayan", "annual_value_usd": 180000, "risk_tier": "High (processes patient addresses)", "contract_end": "2027-12-31"},
+    {"vendor": "Northlake Transcription", "service": "Medical dictation transcription for outpatient clinics", "internal_owner": "Imani Okoye", "annual_value_usd": 420000, "risk_tier": "High (processes clinical notes)", "contract_end": "2026-06-30"},
+    {"vendor": "Pinecrest Staffing", "service": "Temporary registration desk staff", "internal_owner": "Facilities", "annual_value_usd": 95000, "risk_tier": "Low", "contract_end": "2026-09-30"},
+    {"vendor": "Harborview Couriers", "service": "Lab specimen transport between clinics", "internal_owner": "Laboratory services", "annual_value_usd": 260000, "risk_tier": "Medium", "contract_end": "2027-03-31"}
+  ]
+}

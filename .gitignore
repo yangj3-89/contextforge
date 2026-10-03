@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- ContextForge -----------------------------------------------------------
+# Frontend dependencies / build output
+node_modules/
+*.tsbuildinfo
+# Local index snapshots (CF_MEMORY_SNAPSHOT_PATH) and scratch data
+.data/
+*.pkl
+# Downloaded models are cached outside the repo (~/.cache/contextforge); never commit weights
+*.onnx

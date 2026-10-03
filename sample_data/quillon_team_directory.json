@@ -1,0 +1,12 @@
+{
+  "title": "Quillon Labs team directory",
+  "organization": "Quillon Labs",
+  "updated": "2026-02-01",
+  "people": [
+    {"name": "Hannah Brooks", "organization": "Quillon Labs", "role": "Chief Executive Officer", "location": "Toronto", "projects": "Company leadership"},
+    {"name": "Alice Chen", "organization": "Quillon Labs", "role": "Staff Engineer, tech lead", "location": "Toronto", "projects": "Halcyon", "expertise": "retrieval systems, PostgreSQL"},
+    {"name": "Priya Desai", "organization": "Quillon Labs", "role": "Machine Learning Engineer", "location": "Toronto", "projects": "Halcyon", "expertise": "ranking, evaluation"},
+    {"name": "Jonas Lindqvist", "organization": "Quillon Labs", "role": "Site Reliability Engineer", "location": "Remote (Stockholm)", "projects": "Halcyon", "expertise": "Kubernetes, incident response"},
+    {"name": "Marta Kowalski", "organization": "Quillon Labs", "role": "Senior Software Engineer", "location": "Toronto", "projects": "Halcyon, Atlas migration", "status": "Departed 23 January 2026"}
+  ]
+}

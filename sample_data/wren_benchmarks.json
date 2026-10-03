@@ -1,0 +1,10 @@
+{
+  "title": "Wren on-device benchmark runs",
+  "model": "wren-1.3b-distilled",
+  "runs": [
+    {"run_id": "WB-031", "device": "Reference mid-range Android tablet", "runtime": "ONNX Runtime", "quantization": "int8", "p95_first_token_ms": 180, "tokens_per_second": 14, "error_rate_pct": 6.1},
+    {"run_id": "WB-032", "device": "Reference mid-range Android tablet", "runtime": "ONNX Runtime", "quantization": "int4", "p95_first_token_ms": 140, "tokens_per_second": 19, "error_rate_pct": 11.7},
+    {"run_id": "WB-033", "device": "iPad, 10th generation", "runtime": "Core ML", "quantization": "int8", "p95_first_token_ms": 155, "tokens_per_second": 17, "error_rate_pct": 6.0},
+    {"run_id": "WB-034", "device": "Rugged field tablet (4 GB RAM)", "runtime": "ONNX Runtime", "quantization": "int8", "p95_first_token_ms": 410, "tokens_per_second": 6, "error_rate_pct": 6.3, "note": "Swaps to disk when the context exceeds 1,500 tokens"}
+  ]
+}

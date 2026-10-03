@@ -1,0 +1,18 @@
+Halcyon weekly sync - 15 January 2026
+Attendees: Alice Chen, Priya Desai, Jonas Lindqvist, Hannah Brooks (first 15 minutes)
+
+1. Evaluation set
+Priya reported that the labelled evaluation set now has 312 queries. Hybrid retrieval beats vector-only retrieval by 6 points of recall@5 on the set, mostly on queries that contain product codes and ticket numbers.
+
+2. Cross-encoder reranker
+Alice proposed postponing the cross-encoder until the evaluation set reaches 500 queries. Hannah agreed but asked for a cost estimate for GPU inference first.
+
+3. Tenant isolation
+Jonas confirmed that row-level security is enabled for every tenant in production. A. Chen will own a quarterly penetration test with an external firm.
+
+4. Staffing
+Marta Kowalski's last day at Quillon Labs is 23 January. Her ingestion work moves to Priya.
+
+Action items
+- Priya: cost estimate for cross-encoder GPU inference by 29 January.
+- Jonas: dashboard showing consumer lag per tenant.

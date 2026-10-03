@@ -1,0 +1,16 @@
+Wren standup log - week of 9 February 2026
+
+Monday
+- Sam Reyes: finished the int8 calibration run on the German manuals; accuracy dropped by 0.8 points.
+- Marta: rewrote the ONNX export script so attention layers fuse correctly; export time went from 40 to 12 minutes.
+
+Tuesday
+- Marta: Core ML conversion fails on the rotary embedding operator; filed an upstream issue.
+- Sam Reyes: met the field service team in Hamburg; technicians want offline photo search next.
+
+Wednesday
+- Marta Kowalski: workaround for the rotary embedding operator merged; the iPad build is green again.
+- Samantha Reyes: decided to keep the context length at 2,048 tokens for the 1.0 release.
+
+Thursday
+- No standup because of the Tessellate AI all-hands meeting.
